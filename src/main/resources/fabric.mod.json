@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "test-phasmophobiamc",
+  "version": "${version}",
+  "name": "PhasmophobiaMC",
+  "description": "Recreation of Phasmophobia game in Minecraft",
+  "authors": [
+    "PhasmophobiaMC Team"
+  ],
+  "contact": {
+    "homepage": "https://phasmophobiamc.github.io/",
+    "sources": "https://github.com/PhasmophobiaMC/PhasmophobiaMC"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/phasmophobiamc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.phasmophobiamc.PhasmophobiaMC"
+    ],
+    "fabric-datagen": [
+      "io.github.phasmophobiamc.PhasmophobiaMCDataGenerator"
+    ],
+    "server": [],
+    "client": [],
+    "fabric-gametest": [],
+    "preLaunch": []
+  },
+  "mixins": [
+    "test-phasmophobiamc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
